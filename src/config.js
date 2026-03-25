@@ -10,8 +10,8 @@ export const siteConfig = {
   twitterHandle: "@anglowhomes",
   
   // Brand Assets & Visual Identity
-  logo: "", 
-  favicon: "",
+  logo: "https://www.verazadvocates.com.ng/property/wp-content/uploads/2024/06/logo-vera.png", 
+  favicon: "https://www.verazadvocates.com.ng/property/wp-content/uploads/2024/06/logo-vera.png",
   
   // Theme & Aesthetic Control
   theme: {
