@@ -1,48 +1,48 @@
-// 🎨 GLOBAL CONFIGURATION - VERAZ PROPERTIES (PORT HARCOURT)
+// 🎨 GLOBAL CONFIGURATION - ANGLOW HOMES (LAGOS & OGUN)
 export const siteConfig = {
-  name: "Veraz Properties",
-  shortName: "Veraz",
-  location: "Port Harcourt",
-  description: "Your premier gateway to luxury real estate in Port Harcourt. Specialized in secure estates, prime lands, and modern residential developments.",
-  keywords: "real estate port harcourt, houses for sale in PH, Peter Odili road properties, GRA Port Harcourt lands, Veraz Properties Nigeria",
-  author: "Veraz Properties & Investment Ltd",
-  siteUrl: "https://verazproperties.com.ng",
-  twitterHandle: "@verazproperties",
+  name: "Anglow Homes",
+  shortName: "Anglow",
+  location: "Lagos & Ogun",
+  description: "Redefining affordable luxury and strategic land banking in Lagos and Ogun State. Specializing in secure gated communities, prime investment lands, and modern residential builds.",
+  keywords: "real estate lagos, houses for sale in lekki, land in ibeju lekki, affordable homes ogun state, mowe ofada lands, land banking nigeria, Anglow Homes Nigeria",
+  author: "Anglow Homes & Investment Ltd",
+  siteUrl: "https://anglowhomes.com", // Updated to reflect new brand
+  twitterHandle: "@anglowhomes",
   
   // Brand Assets & Visual Identity
-  logo: "https://www.verazadvocates.com.ng/property/wp-content/uploads/2024/06/logo-vera.png", 
-  favicon: "https://www.verazadvocates.com.ng/property/wp-content/uploads/2024/06/logo-vera.png",
+  logo: "", 
+  favicon: "",
   
   // Theme & Aesthetic Control
   theme: {
     primary: "#FFFFFF",
-    accent: "#D4AF37", // Gold accent for a premium feel
+    accent: "#D4AF37", // Keeping the premium Gold accent
     background: "#080808", 
     cardBg: "#0A0A0A",     
     fontSerif: "'Playfair Display', serif", 
     fontSans: "'Inter', sans-serif",
   },
 
-  // --- HERO SECTION (Updated for PH context) ---
+  // --- HERO SECTION (Images kept as requested, Copy updated for Lagos/Ogun) ---
   hero: {
-    scrollText: "Explore",
+    scrollText: "Discover",
     slides: [
       {
-        desktopImage: "https://images.trvl-media.com/place/2782/1a136c99-0dfd-47ef-b072-927c49a788dc.jpg",
-        mobileImage: "https://images.trvl-media.com/place/2782/1a136c99-0dfd-47ef-b072-927c49a788dc.jpg",
-        ctaText: "Premium Residential Listings",
+        desktopImage: "https://www.as-p.com/fileadmin/_processed_import_/b/1/csm_img_1Lekki-Ikoyi_Link_Bridge_6e73d5c8d2.jpg",
+        mobileImage: "https://www.as-p.com/fileadmin/_processed_import_/b/1/csm_img_1Lekki-Ikoyi_Link_Bridge_6e73d5c8d2.jpg",
+        ctaText: "Premium Lagos Listings",
         ctaLink: "/properties" 
       },
       {
-        desktopImage: "https://images.trvl-media.com/place/2782/ef3185f7-7f6f-4be0-be93-463084b5d257.jpg",
-        mobileImage: "https://images.trvl-media.com/place/2782/ef3185f7-7f6f-4be0-be93-463084b5d257.jpg",
-        ctaText: "Investment Lands in PH",
+        desktopImage: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ikoyi%2C_Lagos%2C_Nigeria.jpg",
+        mobileImage: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ikoyi%2C_Lagos%2C_Nigeria.jpg",
+        ctaText: "Investment Lands in Ogun",
         ctaLink: "/lands"
       },
       {
-        desktopImage: "https://images.trvl-media.com/place/2782/28b877b2-07a1-42fb-a919-02efb48b10c9.jpg",
-        mobileImage: "https://images.trvl-media.com/place/2782/28b877b2-07a1-42fb-a919-02efb48b10c9.jpg",
-        ctaText: "Partner with Us",
+        desktopImage: "https://images.trvl-media.com/place/6354407/d80547cb-401a-41d7-96ca-75515126c4ff.jpg",
+        mobileImage: "https://images.trvl-media.com/place/6354407/d80547cb-401a-41d7-96ca-75515126c4ff.jpg",
+        ctaText: "Start Land Banking",
         ctaLink: "/contact"
       }
     ],
@@ -56,25 +56,25 @@ export const siteConfig = {
     parallaxStrength: 15, 
   },
   
-  // Contact Details (Ready for your specific PH data)
+  // Contact Details (Updated for Lagos/Ogun context)
   contact: {
-    phone: "+234 800 000 0000", // Update with your actual number
-    whatsappNumber: "2348000000000", // Update (No '+' or spaces)
-    email: "info@verazproperties.com.ng",
-    address: "Port Harcourt, Rivers State, Nigeria",
+    phone: "+234 000 000 0000", // Update with your actual number
+    whatsappNumber: "2340000000000", // Update (No '+' or spaces)
+    email: "info@anglowhomes.com",
+    address: "Lekki, Lagos State / Mowe, Ogun State, Nigeria",
   },
   
   // Social Ecosystem
   social: {
-    instagram: "https://instagram.com/verazproperties",
-    youtube: "https://youtube.com/@verazproperties" 
+    instagram: "https://instagram.com/anglowhomes",
+    youtube: "https://youtube.com/@anglowhomes" 
   },
   
   // Lead Generation
   formspreeEndpoint: "https://formspree.io/f/your_endpoint_here", 
   
   // Global Metadata for SEO
-  ogImage: "https://verazproperties.com.ng/og-preview.jpg", 
+  ogImage: "https://anglowhomes.com/og-preview.jpg", 
 };
 
 /**
@@ -87,7 +87,7 @@ export const whatsappMessage = (propertyTitle, propertyPrice, propertyUrl) => {
     maximumFractionDigits: 0,
   }).format(propertyPrice);
 
-  return `Hello Veraz Properties. I am interested in this listing:
+  return `Hello Anglow Homes. I am interested in this listing:
   
 Property: ${propertyTitle}
 Value: ${formattedPrice}
