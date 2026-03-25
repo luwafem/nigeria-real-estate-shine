@@ -1,19 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/', // Ensures all assets are referenced from the root
   build: {
+    outDir: 'dist',
+    chunkSizeWarningLimit: 1000, // Higher limit for GSAP
     rollupOptions: {
       output: {
-        // We converted the object to a function to satisfy the builder
+        // This splits your code to make the initial load faster
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            // Check for GSAP specifically
             if (id.includes('gsap')) {
-              return 'gsap';
+              return 'gsap'; // Separate GSAP as it's large
             }
-            // Check for React core libraries
             if (
               id.includes('react') || 
               id.includes('react-dom') || 
@@ -21,7 +23,6 @@ export default defineConfig({
             ) {
               return 'vendor';
             }
-            // Fallback for other node_modules
             return 'libs';
           }
         }
